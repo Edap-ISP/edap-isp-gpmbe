@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulaire d'enregistrement d'admin</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+<form method="post" action="enreg_users.php">
+	<title>User name</title>
+	<div> Nom :<input type="text" name="nom" autocomplete="off"></div><br>
+	<div> Postnom :<input type="text" name="postnom" autocomplete="off"></div><br>
+	<div> Prenom :<input type="text" name="prenom" autocomplete="off"></div><br>
+	<div> sexe <select name="sexe" required="">
+		<option value="">Select your sex</option>
+				<option value="M">M</option>
+				<option value="F">F</option>
+	</select> </div><br>
+
+	<div> Privilège <select name="priv" required="">
+		<option value="">Select Privilege</option>
+				<option value="full_access">Full Access</option>
+				<option value="semi_full">Semi Full Access</option>
+				<option value="user">User</option>
+	</select> </div><br>
+
+	<div> e-mail: <input type="text" name="email" autocomplete="off"></div><br>
+	<div> Tél: <input type="text" name="tel" autocomplete="off"></div><br>
+	<div> password: <input type="text" name="pss" autocomplete="off"></div><br>
+	<input type="submit" name="Enregistrer">
+</form>
+</body>
+</html>
